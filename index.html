@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Mishra</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</head>
+
+<body>
+    <header id="mainHeader" class="fixed w-full top-0 z-50 transition-all duration-300 py-2 ">
+        <div class="container">
+            <div class="flex items-center justify-between mt-2">
+                <div>
+                    <a href="#">
+                        <h1 class="text-[30px] font-extrabold hover:text-white
+                         text-[#ffbd39]">Fronty</h1>
+                    </a>
+                </div>
+                <!-- Nav Menu -->
+                <nav id="nav-menu"
+                    class="hidden flex-col lg:flex lg:flex-row items-start lg:items-center gap-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent px-6 lg:px-0 py-6 lg:py-0 z-50">
+
+                    <a href="#" class="text-[16px] font-medium text-[#ffbd39]">Home</a>
+                    <a href="#about" class="text-[16px] font-medium text-white hover:text-[#ffbd39]">About</a>
+                    <a href="#education" class="text-[16px] font-medium text-white hover:text-[#ffbd39]">Education</a>
+                    <a href="#services" class="text-[16px] font-medium text-white hover:text-[#ffbd39]">Services</a>
+                    <a href="#skills" class="text-[16px] font-medium text-white hover:text-[#ffbd39]">Skills</a>
+                    <a href="#contact" class="text-[16px] font-medium text-white hover:text-[#ffbd39]">Contact</a>
+                </nav>
+                <!-- Contact Button (desktop only) -->
+                <div class="hidden lg:block">
+                    <a href="#contact"
+                        class="bg-[#ffbd39] px-8 py-3 text-[16px] text-black rounded-full hover:bg-[#dce856] transition duration-300 cursor-pointer">
+                        Contact Me
+                    </a>
+                </div>
+                <!-- Hamburger Button (Mobile) -->
+                <div id="menu-toggle" class="text-white text-3xl lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- ----------------------section1(hero)------------------------- -->
+        <section class="py-10">
+            <div class="container">
+                <div class="grid lg:grid-cols-2 items-center mt-10 sm:mt-8">
+                    <div>
+                        <h2 id="uday"
+                            class="text-white font-bold leading-tight text-[45px] sm:text-[50px] text-center lg:text-left lg:text-[85px] ">
+                            <span class="inline-block">H</span><span class="inline-block">e</span><span
+                                class="inline-block">l</span><span class="inline-block">l</span><span
+                                class="inline-block">o!</span> <span class="inline-block">I’</span><span
+                                class="inline-block">m</span><br><span class="text-[#ffbd39]"><span
+                                    class="inline-block">U</span><span class="inline-block">d</span><span
+                                    class="inline-block">a</span><span class="inline-block">y</span> <span
+                                    class="inline-block">M</span><span class="inline-block">i</span><span
+                                    class="inline-block">s</span><span class="inline-block">h</span><span
+                                    class="inline-block">r</span><span class="inline-block">a</span></span>
+                        </h2>
+                        <h3 id="developer"
+                            class="text-white font-normal mt-6  text-[16px] md:text-[24px] lg:text-[28px] text-center lg:text-left ">
+                            <span class="inline-block">I'</span><span class="inline-block">m</span> <span
+                                class="inline-block">a</span> <span class="inline-block">p</span><span
+                                class="inline-block">a</span><span class="inline-block">s</span><span
+                                class="inline-block">s</span><span class="inline-block">i</span><span
+                                class="inline-block">o</span><span class="inline-block">n</span><span
+                                class="inline-block">a</span><span class="inline-block">t</span><span
+                                class="inline-block">e</span> <span id="typed"
+                                class="text-[#ffbd39] inline-block"></span>
+                        </h3>
+                        <div class="flex lg:flex gap-4 mt-6 justify-center lg:justify-start">
+                            <div id="cv">
+                                <h3
+                                    class="bg-[#ffbd39] px-6 py-3 lg:px-8 lg:py-3 text-[16px] text-black rounded-full hover:bg-[#dce856] transition duration-300 inline-block">
+                                    <a href="assets/pdf/CV_Uday.pdf" download>Download CV</a>
+                                </h3>
+                            </div>
+                            <div id="cv">
+                                <h3
+                                    class=" shadow-[0_4px_12px_white] border-[1px] border-[#ffffff] px-8 py-3 text-[16px] text-white rounded-full hover:bg-[#dce856] hover:text-black transition duration-300 inline-block">
+                                    <a href="#contact">Hire Me</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------img------ -->
+                    <div id="img" class="flex justify-center sm:justify-center lg:justify-end -mt-6 sm:-mt-6 lg:-mt-20">
+                        <img src="assets/images/uday_b-removebg-preview.png" alt="" class="w-[100%] object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class=""></div>
+        </section>
+        <!-- ----------------------section2------------------------- -->
+        <section id="about" class="py-10">
+            <div class="container">
+                <div class="flex flex-col-reverse lg:flex-row lg:justify-center gap-12 items-center">
+                    <div id="abt_img" class="shadow-[0_4px_10px_white] rounded-3xl">
+                        <img src="assets/images/uday_about.avif" alt=""
+                            class="w-[400px] h-[540px] rounded-3xl shadow-lg">
+                    </div>
+                    <div id="abt_text" class="">
+                        <h2 class="text-[50px] font-bold text-white text-center lg:text-left">About Me</h2>
+                        <p class="text-[#999999] text-[16px] my-8">My name is Uday Mishra from Bankura,WestBengal.</p>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex">
+                                <span class="w-32 font-bold text-white">Name:</span>
+                                <span class="text-[#999999]">Uday Mishra</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-32 font-bold text-white">Date of birth:</span>
+                                <span class="text-[#999999]">February 03, 2003</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-32 font-bold text-white">Address:</span>
+                                <span class="text-[#999999]">Bankura,West Bengal</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-32 font-bold text-white">Zip code:</span>
+                                <span class="text-[#999999]">722101</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-32 font-bold text-white">Email:</span>
+                                <span class="text-[#999999]">udaymishracr7@gmail.com</span>
+                            </div>
+                            <div class="flex">
+                                <span class="w-32 font-bold text-white">Phone:</span>
+                                <span class="text-[#999999]">+91 8391853051</span>
+                            </div>
+                        </div>
+                        <p class="text-[#ffbd39] font-semibold text-lg mt-10">5 <span class="text-white">Project
+                                complete</span></p>
+                        <div class="mt-10 text-center lg:text-left">
+                            <a href="#"
+                                class="bg-[#ffbd39] px-8 py-3 text-[16px] text-black rounded-full hover:bg-[#dce856] transition duration-300 cursor-pointer">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------section3------------------------- -->
+        <section id="education" class="py-10 lg:py-14">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title text-[50px] font-bold text-white text-center">Education</h2>
+                <p class="section-subtitle text-[#999999] text-[16px] my-6 lg:my-10 text-center">
+                    Education is the most powerful weapon which you can use to change the world.
+                </p>
+
+                <div class="education-card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    <div class="education-card bg-[#232525] p-6 rounded-md hover:scale-105 transition duration-300">
+                        <h2 class="text-[#ffbd39] text-[26px] font-extrabold">2024-2026</h2>
+                        <h3 class="text-white text-[26px] font-normal leading-normal">
+                            Master Degree of Computer Applications (MCA)
+                        </h3>
+                        <h4 class="text-[12px] font-semibold text-[#999999] leading-10">
+                            Dr. B.C. Roy Engineering College, Durgapur
+                        </h4>
+                        <p class="text-[#999999] mt-4 leading-relaxed">
+                            I am currently pursuing my MCA from Dr. B.C. Roy Engineering College.
+                        </p>
+                    </div>
+
+                    <div class="education-card bg-[#232525] p-6 rounded-md hover:scale-105 transition duration-300">
+                        <h2 class="text-[#ffbd39] text-[26px] font-extrabold">2021-2024</h2>
+                        <h3 class="text-white text-[26px] font-normal leading-normal">
+                            Bachelor Degree of Computer Applications (BCA)
+                        </h3>
+                        <h4 class="text-[12px] font-semibold text-[#999999] leading-10">
+                            ICIS College, Bankura University
+                        </h4>
+                        <p class="text-[#999999] mt-4 leading-relaxed">
+                            I completed my BCA in 2024 from ICIS College under Bankura University.
+                        </p>
+                    </div>
+
+                    <div class="education-card bg-[#232525] p-6 rounded-md hover:scale-105 transition duration-300">
+                        <h2 class="text-[#ffbd39] text-[26px] font-extrabold">2011-2021</h2>
+                        <h3 class="text-white text-[26px] font-normal leading-normal">
+                            Completed 10
+                        </h3>
+                        <h3 class="text-white text-[26px] font-normal leading-normal">
+                            Completed 10+2
+                        </h3>
+                        <h4 class="text-[12px] font-semibold text-[#999999] leading-10">
+                            Bankura Hindu High School
+                        </h4>
+                        <p class="text-[#999999] mt-4 leading-relaxed">
+                            I completed my Higher Secondary (10+2) education from Bankura Hindu High School.
+                        </p>
+                    </div>
+
+                    <div class="education-card bg-[#232525] p-6 rounded-md hover:scale-105 transition duration-300">
+                        <h2 class="text-[#ffbd39] text-[26px] font-extrabold">2024-2025</h2>
+                        <h3 class="text-white text-[26px] font-normal leading-normal">
+                            Web Development
+                        </h3>
+                        <h4 class="text-[12px] font-semibold text-[#999999] leading-10">
+                            Devyarn
+                        </h4>
+                        <p class="text-[#999999] mt-4 leading-relaxed">
+                            I am currently pursuing Web Development course from Devyarn, Bankura.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <h3
+                        class="bg-[#ffbd39] px-8 py-3 text-[16px] text-black rounded-full hover:bg-[#dce856] transition duration-300 inline-block">
+                        <a href="#">Download CV</a>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------section4------------------------- -->
+        <section id="services" class="py-10">
+            <div class="container">
+                <h2 class="text-[50px] font-bold text-white text-center">Services</h2>
+                <p class="text-[#999999] text-[16px] my-10 text-center lg:w-[1000px] md:w-[660px] w-[310px] mx-auto">I
+                    specialize in crafting modern, visually
+                    appealing, and fully responsive websites that deliver a smooth user experience across all devices.
+                    Whether you need a landing page, a complete business website, or a personal portfolio, I ensure
+                    clean code, pixel-perfect design, and mobile-first responsiveness. Your satisfaction and website
+                    performance are my top priorities.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-6">
+                    <div class="bg-[#232525] py-14 rounded-md hover:bg-[#ffbd39] group transition-all duration-300">
+                        <img src="assets/images/icons8-web-development-50.png" alt=""
+                            class="invert w-[70px] h-auto mx-auto">
+                        <h3
+                            class="text-[22px] font-medium text-center mt-6 text-[#ffbd39]  group-hover:text-white transition-all duration-300">
+                            web development</h3>
+                        <hr
+                            class="w-12 mx-auto border-t-2 mt-4 border-[#ffbd39] rounded-full  group-hover:border-white transition-all duration-300">
+                    </div>
+                    <div class="bg-[#232525] py-14 rounded-md hover:bg-[#ffbd39] group transition-all duration-300">
+                        <img src="assets/images/icons8-web-development-50.png" alt=""
+                            class="invert w-[70px] h-auto mx-auto">
+                        <h3
+                            class="text-[22px] font-medium text-center mt-6 text-[#ffbd39]  group-hover:text-white transition-all duration-300">
+                            Responsive WebDesign</h3>
+                        <hr
+                            class="w-12 mx-auto border-t-2 mt-4 border-[#ffbd39] rounded-full  group-hover:border-white transition-all duration-300">
+                    </div>
+                    <div class="bg-[#232525] py-14 rounded-md hover:bg-[#ffbd39] group transition-all duration-300">
+                        <img src="assets/images/icons8-web-development-50.png" alt=""
+                            class="invert w-[70px] h-auto mx-auto">
+                        <h3
+                            class="text-[22px] font-medium text-center mt-6 text-[#ffbd39]  group-hover:text-white transition-all duration-300">
+                            Website Redesign/UI Improvement</h3>
+                        <hr
+                            class="w-12 mx-auto border-t-2 mt-4 border-[#ffbd39] rounded-full  group-hover:border-white transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------section5------------------------- -->
+        <section id="skills" class="text-white py-30">
+            <div class="max-w-6xl mx-auto px-4">
+                <!-- Section Heading -->
+                <h2 class="text-4xl font-bold text-center">My Skills</h2>
+                <p class="text-center text-gray-400 mt-6 md:mt-8 lg:mt-10 w-[340px] md:[600px] lg:w-[770px] mx-auto">
+                    I specialize in building clean, responsive, and SEO-friendly websites using modern web technologies.
+                    My focus is on delivering high-performance, pixel-perfect designs for all devices.
+                </p>
+
+                <!-- Skills Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
+
+                    <!-- Skill Row -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>HTML5</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full h-2 bg-[#1a1a1a] rounded-full">
+                            <div class="h-2 bg-[#ffbd39] rounded-full" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>CSS3</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="w-full h-2 bg-[#1a1a1a] rounded-full">
+                            <div class="h-2 bg-[#ffbd39] rounded-full" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>TailwindCSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="w-full h-2 bg-[#1a1a1a] rounded-full">
+                            <div class="h-2 bg-[#ffbd39] rounded-full" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>PHP</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="w-full h-2 bg-[#1a1a1a] rounded-full">
+                            <div class="h-2 bg-[#ffbd39] rounded-full" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>WordPress</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="w-full h-2 bg-[#1a1a1a] rounded-full">
+                            <div class="h-2 bg-[#ffbd39] rounded-full" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>C++</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="w-full h-2 bg-[#1a1a1a] rounded-full">
+                            <div class="h-2 bg-[#ffbd39] rounded-full" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------section6------------------------- -->
+        <section
+            class="bg-[url(assets/images/bg_1.jpg)] pt-10 pb-10 max-w-full bg-no-repeat object-cover bg-center h-[400px]">
+            <h2 class="text-4xl md:text-5xl lg:text-5xl text-white font-bold text-center mt-14">I'm <span
+                    class="text-[#ffbd39]"> Available</span> for
+                freelancing</h2>
+            <p class="text-center text-[#d9d8d8] mt-6 md:mt-8 lg:mt-10 w-[340px] md:[600px] lg:w-[540px] mx-auto">
+                Freelancing is my passion and I’m always ready to collaborate. Let’s connect if you’re looking for
+                someone reliable and skilled.
+            </p>
+            <div class="flex justify-center mt-6">
+                <h3
+                    class=" shadow-[0_4px_12px_white] border-[1px] border-[#ffffff] px-8 py-3 text-[16px] text-white rounded-full hover:bg-[#dce856] hover:text-black transition duration-300 inline-block">
+                    <a href="#">Hire Me</a>
+                </h3>
+            </div>
+            <!-- <div class="pb-24"></div> -->
+        </section>
+        <!-- ---------------------------section--------------------- -->
+        <section id="contact" class="py-20">
+            <div class="container">
+                <h2 class="text-[50px] font-bold text-white text-center">Contact Me</h2>
+                <p class="text-[#999999] text-[16px] my-6 lg:my-10 text-center max-w-[600px] mx-auto">Freelancing is my
+                    passion and I’m always
+                    ready to collaborate. Let’s connect if you’re looking for
+                    someone reliable and skilled..</p>
+            </div>
+            <div class="relative  max-w-[340px] md:max-w-[500px] lg:max-w-[600px] mx-auto p-[3px] rounded-xl">
+
+                <!-- Inner Form Box -->
+                <div class="relative max-w-[340px] md:max-w-[500px] lg:max-w-[600px] mx-auto p-[3px] rounded-xl">
+
+                    <!-- Glassy Inner Form -->
+                    <div class="backdrop-blur-xl bg-lime-500/30 border border-white/20 p-8 rounded-xl shadow-xl">
+                        <form id="contactForm" action="submit.php" method="POST" class="space-y-4">
+                            <input type="text" name="name" placeholder="Your Name" required
+                                class="w-full px-4 py-3 border border-gray-300/40 rounded-md bg-white/20 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="email" name="email" required placeholder="Your Email"
+                                class="w-full px-4 py-3 border border-gray-300/40 rounded-md bg-white/20 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" name="subject" required placeholder="Subject"
+                                class="w-full px-4 py-3 border border-gray-300/40 rounded-md bg-white/20 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <textarea rows="5" name="message" required placeholder="Message"
+                                class="w-full px-4 py-3 border border-gray-300/40 rounded-md bg-white/20 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                            <button type="submit" id="submitBtn"
+                                class="bg-yellow-400 text-black font-semibold px-8 py-3 rounded-full shadow-md hover:bg-yellow-500 transition duration-300 cursor-pointer">
+                                SEND MESSAGE
+                            </button>
+                        </form>
+
+                        <!-- Response Message -->
+                        <div id="responseMsg" class="mt-4 text-white font-semibold"></div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-12 bg-[#0d0d0d]">
+        <div class="container">
+            <p class="text-[#999999] text-center text-[14px] lg:text-[16px]">© 2025 Uday Mishra. This portfolio is built
+                for learning, growth, and opportunity.</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#contactForm").on("submit", function (e) {
+                e.preventDefault();
+
+                // Change button text while processing
+                $("#submitBtn").text("Sending...").prop("disabled", true);
+
+                $.ajax({
+                    url: $(this).attr("action"),
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function (response) {
+
+                        $("#responseMsg").html(`<span class='text-green-400'>${response}</span>`);
+                        $("#contactForm")[0].reset();
+                        $("#submitBtn").text("SEND MESSAGE").prop("disabled", false);
+                    },
+                    error: function () {
+                        $("#responseMsg").html("<span class='text-red-400'>❌ Failed to send message.</span>");
+                        $("#submitBtn").text("SEND MESSAGE").prop("disabled", false);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+    <!-- Toggle Script -->
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ["Web Developer.", "Frontend Engineer.", "Fullstack Developer.", "Coder."],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1500,
+            loop: true,
+        });
+    </script>
+    <script>
+        const header = document.getElementById("mainHeader");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 10) {
+                header.classList.add("bg-[#232525]", "shadow-lg");
+            } else {
+                header.classList.remove("bg-[#232525]", "shadow-lg");
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

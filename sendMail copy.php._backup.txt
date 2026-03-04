@@ -1,0 +1,38 @@
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require 'inc/PHPMailer-master/src/Exception.php';
+require 'inc/PHPMailer-master/src/PHPMailer.php';
+require 'inc/PHPMailer-master/src/SMTP.php';
+
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    $mail->SMTPDebug = 0; // Change to 2 for debugging
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'uday.devyarn@gmail.com';
+    $mail->Password   = 'dpvcfddcbparcbbm';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
+
+    //Recipients
+    $mail->setFrom('uday.devyarn@gmail.com', 'Uday');
+    $mail->addAddress('udaymishracr7@gmail.com', 'UD');
+    // $mail->addReplyTo('reply@example.com', 'Reply Address');
+
+    //Content
+    $mail->isHTML(true);
+    $mail->Subject = 'PHPMailer Test';
+    $mail->Body    = '<h1>Hello!</h1><p>This is a test email sent using PHPMailer.</p>';
+    $mail->AltBody = 'This is a plain text version of the email content.';
+
+    $mail->send();
+    echo '✅ Message has been sent successfully!';
+} catch (Exception $e) {
+    echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
